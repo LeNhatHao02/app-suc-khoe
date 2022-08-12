@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DangkyActivity"
+    android:background="#5381fe">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".DANGKI">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="275dp"
+            android:layout_height="59dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="ĐĂNG KÍ"
+            android:textColor="#000"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.043" />
+
+        <EditText
+            android:id="@+id/tvhovaten"
+            android:layout_width="374dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:hint="Họ và tên"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="113dp" />
+
+        <EditText
+            android:id="@+id/tvCCCD"
+            android:layout_width="374dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:hint="CMND/CCCD"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="165dp" />
+
+        <EditText
+            android:id="@+id/tvtramyte"
+            android:layout_width="374dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:hint="Trạm Y Tế"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="209dp" />
+
+        <EditText
+            android:id="@+id/tvmatkhau"
+            android:layout_width="374dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:hint="Mật khẩu"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="261dp" />
+
+        <EditText
+            android:id="@+id/tvsdt"
+            android:layout_width="374dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+
+            android:layout_marginStart="16dp"
+            android:hint="SDT"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="313dp" />
+
+        <EditText
+            android:id="@+id/tvtiensubenh"
+            android:layout_width="374dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="16dp"
+            android:hint="Tiền sử bệnh"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="365dp" />
+
+        <Button
+            android:id="@+id/btndangki"
+            android:layout_width="200dp"
+            android:layout_height="64dp"
+            android:text="ĐĂNG KÍ"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints,TextContrastCheck"
+            tools:layout_editor_absoluteY="577dp" />
+
+        <Button
+            android:id="@+id/btntrolai"
+            android:layout_width="150dp"
+            android:layout_height="64dp"
+            android:text="Quay lại"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints,TextContrastCheck"
+            tools:layout_editor_absoluteY="641dp" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
